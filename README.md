@@ -3,11 +3,11 @@
   <br>
   <a href="http://www.ricardodarocha.com.br"><img src="https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.png" alt="Markdownify" width="200"></a>
   <br>
-  Markdownify
+  Quick_Template
   <br>
 </h1>
 
-<h4 align="center">About
+<h4 align="center">About  
 Uma forma simples de gerar templates no formato {{mustaches}} a partir de um arquivo json baseado em <a href="https://docs.rs/handlebars/latest/handlebars/" target="_blank">Handlebars</a>.</h4>
 
 <p align="center">
