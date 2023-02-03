@@ -3,7 +3,7 @@
   <br>
   <a href="http://www.ricardodarocha.com.br"><img src="https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.png" alt="Markdownify" width="200"></a>
   <br>
-  Quick_Template
+  Quick Template
   <br>
 </h1>
 
