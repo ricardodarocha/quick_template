@@ -10,15 +10,15 @@
 <h4>Uma forma simples de gerar templates no formato {{mustaches}} a partir de um arquivo json baseado em <a href="https://docs.rs/handlebars/latest/handlebars/" target="_blank">Handlebars</a>.</h4>
 
 <p align="center">
-  <a href="https://badge.fury.io/js/electron-markdownify">
+  <a href="">
     <img src="https://badge.fury.io/js/electron-markdownify.svg"
          alt="Gitter">
   </a>
-  <a href="https://gitter.im/amitmerchant1990/electron-markdownify"><img src="https://badges.gitter.im/amitmerchant1990/electron-markdownify.svg"></a>
-  <a href="https://saythanks.io/to/bullredeyes@gmail.com">
+  <a href=""><img src="https://badges.gitter.im/amitmerchant1990/electron-markdownify.svg"></a>
+  <a href="">
       <img src="https://img.shields.io/badge/SayThanks.io-%E2%98%BC-1EAEDB.svg">
   </a>
-  <a href="https://www.paypal.me/AmitMerchant">
+  <a href="https://www.paypal.com/donate/buttons/manage/BVHK47UN6EM28">
     <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat">
   </a>
 </p>
@@ -52,10 +52,12 @@ Os campos podem ser substituídos por um conteúdo em JSON
 {"usuario": "Convidado",
 "sistema": "Rust",
 "dd": 26,
+"mmmm": "Janeiro",
 "tempo": "ensolarado"
-}```
+}
+```
 
-##a Como usar
+## Como usar
 
 Clone este repositório [Git](https://github.com/ricardodarocha/quick_template.git) 
 Rode o comando `cargo run -- arquivos/template.txt arquivos/dados.json gerado/documento.txt`
