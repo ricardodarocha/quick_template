@@ -33,7 +33,7 @@ Uma forma simples de gerar templates no formato {{mustaches}} a partir de um arq
   <a href="#license">License</a>
 </p>
 
-![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)
+![screenshot](img/quick_template.gif)
 
 ## Introdução
 
