@@ -7,7 +7,8 @@
   <br>
 </h1>
 
-<h4 align="center">A minimal Markdown Editor desktop app built on top of <a href="http://electron.atom.io" target="_blank">Electron</a>.</h4>
+<h4 align="center">About
+Uma forma simples de gerar templates no formato {{mustaches}} a partir de um arquivo json baseado em <a href="https://docs.rs/handlebars/latest/handlebars/" target="_blank">Handlebars</a>.</h4>
 
 <p align="center">
   <a href="https://badge.fury.io/js/electron-markdownify">
@@ -24,8 +25,8 @@
 </p>
 
 <p align="center">
-  <a href="#key-features">Key Features</a> •
-  <a href="#how-to-use">How To Use</a> •
+  <a href="#introdução">Introdução</a> •
+  <a href="#como-usar">Como usar</a> •
   <a href="#download">Download</a> •
   <a href="#credits">Credits</a> •
   <a href="#related">Related</a> •
@@ -34,94 +35,83 @@
 
 ![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)
 
-## Key Features
+## Introdução
 
-* LivePreview - Make changes, See changes
-  - Instantly see what your Markdown documents look like in HTML as you create them.
-* Sync Scrolling
-  - While you type, LivePreview will automatically scroll to the current location you're editing.
-* GitHub Flavored Markdown  
-* Syntax highlighting
-* [KaTeX](https://khan.github.io/KaTeX/) Support
-* Dark/Light mode
-* Toolbar for basic Markdown formatting
-* Supports multiple cursors
-* Save the Markdown preview as PDF
-* Emoji support in preview :tada:
-* App will keep alive in tray for quick usage
-* Full screen mode
-  - Write distraction free.
-* Cross platform
-  - Windows, macOS and Linux ready.
+Se você pretende preencher um template de documento, você pode marcar os campos com um par de mustaches {{}}, no meio dessas chaves você coloca o nome do campo
 
-## How To Use
+**Exemplo**
+```
+Olá {{usuario}},
+bem vindo ao sistema {{}}.
+Hoje é {{dd}} de {{mmmm}}.
+O tempo está {{tempo}}.
+```
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+Os campos podem ser substituídos por um conteúdo em JSON
+**dados.json**
+```json
+{"usuario": "Convidado",
+"sistema": "Rust",
+"dd": 26,
+"tempo": "ensolarado"
+}```
+
+##a Como usar
+
+Clone este repositório [Git](https://github.com/ricardodarocha/quick_template.git) 
+Rode o comando `cargo run -- arquivos/template.txt arquivos/dados.json gerado/documento.txt`
+Você verá que o documento.txt será criado na pasta "gerado"
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/amitmerchant1990/electron-markdownify
+$ git clone https://github.com/ricardodarocha/quick_template.git
 
 # Go into the repository
-$ cd electron-markdownify
+$ cd quick_template
 
-# Install dependencies
-$ npm install
+# Abra com VSCode
+$ code .
 
-# Run the app
-$ npm start
+# Rode o aplicativo passando os parâmetros
+$ cargo run -- arquivos/template.txt arquivos/dados.json gerado/documento.txt
 ```
-
-> **Note**
-> If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
-
 
 ## Download
 
-You can [download](https://github.com/amitmerchant1990/electron-markdownify/releases/tag/v1.2.0) the latest installable version of Markdownify for Windows, macOS and Linux.
+Você pode baixar a última versão estável do binário em ...
 
 ## Emailware
 
-Markdownify is an [emailware](https://en.wiktionary.org/wiki/emailware). Meaning, if you liked using this app or it has helped you in any way, I'd like you send me an email at <bullredeyes@gmail.com> about anything you'd want to say about this software. I'd really appreciate it!
+Caso necessite de suporte ou queira personalizar este projeto você pode entrar em contato comigo <ricardodarocha@outlook.com> 
 
 ## Credits
 
 This software uses the following open source packages:
 
-- [Electron](http://electron.atom.io/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
-- [showdown](http://showdownjs.github.io/showdown/)
-- [CodeMirror](http://codemirror.net/)
-- Emojis are taken from [here](https://github.com/arvida/emoji-cheat-sheet.com)
-- [highlight.js](https://highlightjs.org/)
+- [Handlebars](https://docs.rs/handlebars/latest/handlebars)
+- [Serde_Json](https://docs.rs/serde_json/latest/serde_json/)
 
 ## Related
 
-[markdownify-web](https://github.com/amitmerchant1990/markdownify-web) - Web version of Markdownify
+[Rust](https://www.rust-lang.org/pt-BR) - A linguagem mais querida 🦀
 
-## Support
+## Contato
 
-<a href="https://www.buymeacoffee.com/5Zn8Xh3l9" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
-
-<p>Or</p> 
-
-<a href="https://www.patreon.com/amitmerchant">
-	<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
-</a>
-
-## You may also like...
-
-- [Pomolectron](https://github.com/amitmerchant1990/pomolectron) - A pomodoro app
-- [Correo](https://github.com/amitmerchant1990/correo) - A menubar/taskbar Gmail App for Windows and macOS
-
-## License
-
-MIT
-
----
-
-> [ricardodarocha.com.br](https://www.ricardodarocha.com.br) &nbsp;&middot;&nbsp;
+> Linkedin [ricardo-da-rocha-vitor](https://www.linkedin.com/in/ricardo-da-rocha-vitor-a0983932/)
+> Site [ricardodarocha.com.br](https://www.ricardodarocha.com.br) &nbsp;&middot;&nbsp;
 > GitHub [@ricardodarocha](https://github.com/ricardodarocha) &nbsp;&middot;&nbsp;
 > Twitter [@ricardorochadev](https://twitter.com/ricardorochadev)
 
+
+## You may also like...
+
+- [Tera](https://crates.io/crates/tera) 
+- [Tera-cli](https://crates.io/crates/tera-cli)
+- [Askama](https://crates.io/crates/askama)
+- [Minijinja](https://crates.io/crates/minijinja)
+
+## License
+
+
+
+---

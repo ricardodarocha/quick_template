@@ -1,0 +1,3 @@
+Este é um exemplo básico
+Olá {{fulano}}
+Bem vindo ao {{sistema}}
