@@ -7,8 +7,7 @@
   <br>
 </h1>
 
-<h4 align="center">About  
-Uma forma simples de gerar templates no formato {{mustaches}} a partir de um arquivo json baseado em <a href="https://docs.rs/handlebars/latest/handlebars/" target="_blank">Handlebars</a>.</h4>
+<h4>Uma forma simples de gerar templates no formato {{mustaches}} a partir de um arquivo json baseado em <a href="https://docs.rs/handlebars/latest/handlebars/" target="_blank">Handlebars</a>.</h4>
 
 <p align="center">
   <a href="https://badge.fury.io/js/electron-markdownify">
